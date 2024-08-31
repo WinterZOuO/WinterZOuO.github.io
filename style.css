@@ -1,0 +1,179 @@
+body{
+    margin: 0 auto;
+}
+#__next{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* P1 */
+.header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#leftHeader{
+    padding-left: 20px;
+    font-family: "JBEtude-Regular";
+    font-size: 25px;
+}
+#rightHeader{
+    padding-right: 10px;
+}
+.headerButton{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+#p1Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+#personalContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 100px;
+}
+.personalIntro{
+    position: relative;
+    right: 100px;
+    /* background-color: black; */
+}
+#personalIntroHeading{
+    font-size: 50px;
+    font-weight: bold;
+}
+#personalPhotoBorder{
+    width: 300px;
+    height: 300px;
+    border: solid 3px black;
+    border-radius: 54% 46% 70% 30% / 30% 38% 62% 70%;
+    position: relative;
+    left: 150px;
+    overflow: hidden;
+    animation-name: p1Photo;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+#personalPhoto{
+    display: flex;
+    position: relative;
+    bottom: 100px;
+}
+#techStack{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 100px;
+    font-size: 25px;
+}
+#socialMedia{
+    display: flex;
+    flex: row;
+    align-items: left;
+}
+#githubIcon, #XIcon, #mateIcon{
+    margin-right: 50px;
+    font-size: 20px;
+}
+#techStackText{
+    position: relative;
+    right: 160px;
+    /* background-color: black; */
+}
+#CSS, #HTML, #javascript, #python{
+    margin: 20px;
+    font-size: 40px;
+}
+/* P2 */
+#p2Container{
+    /* background-color: blue; */
+    display: block;
+}
+/* p4 */
+#p4Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#contactBlock{
+    width: 300px;
+    height: 400px;
+    align-items: left;
+    position: relative;
+    left: 150px;
+    bottom: 100px;
+    padding: 10px;
+    background-color: red;
+    box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+}
+.contactInfo ,.p4icon{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+}
+#contactHeading{
+    text-align: center;
+    border-bottom: solid 2px white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 10px;    
+}
+#contactBlock i{
+    border: solid 1px white;
+    border-radius: 100%;
+    padding: 10px;
+}
+.contactContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+#postform{
+    background-color: rgba(111, 0, 255, 0.891);
+    width: 600px;
+    height: 500px;
+    padding: 20px 0 0 250px ;
+}
+@keyframes p1Photo {
+    0%{
+        border-radius: 40% 60% 51% 49% / 39% 45% 55% 61%;
+    }
+    50%{
+        border-radius: 26% 74% 45% 55% / 39% 34% 66% 61%;
+    }
+    100%{
+        border-radius: 40% 60% 51% 49% / 39% 45% 55% 61%;
+    }
+}

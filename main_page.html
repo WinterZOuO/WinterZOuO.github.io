@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f93af310f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+    <style>@font-face{
+        font-family:"JBEtude-Regular";
+        src: url("./font/JBEtude-Regular.ttf");
+    }
+    </style>
+</head>
+<body>
+    <div id = "__next">
+        <header class="header">
+            <div id = "leftHeader">JackL.dev</div>
+            <div id = "rightHeader">
+                <a href="#p1Container"><button class="headerButton" id="headerHomeButton">Home</button></a>
+                <a href="#p2Container"><button class="headerButton" id="headerAboutButton">About</button></a>
+                <a href="#p3Container"><button class="headerButton" id="headerPortfolioButton">Portfolio</button></a>
+                <a href="#p4Container"><button class="headerButton" id="headerContactButton">Contact</button></a>           
+            </div>
+        </header>
+        <div class="container" id = "p1Container">
+            <div id="personalContainer">
+                <div class="personalIntro">
+                    <h1 id="personalIntroHeading">Front-End UI<br>Developer👋</h1>
+                    <p id="personalIntroText">Hi! I'm JackyLau. A passionate Front-End<br>Developer base in Hong Kong. <a href="https://maps.app.goo.gl/bfmZBPLKSPsmGiou6"><icon id="locationIcon">🌏</icon></a></p>
+                    <div id="socialMedia">
+                        <icon id="githubIcon"><a href=""><i class="fa-brands fa-github"></i></a></icon>
+                        <icon id="XIcon"><a href=""><i class="fa-brands fa-x-twitter"></i></a></icon>
+                        <icon id="mateIcon"><a href=""><i class="fa-brands fa-facebook"></i></a></icon>
+                    </div>
+                    
+                </div>
+                <h2 class="photo" id="personalPhotoBorder">
+                    <p id="personalPhoto"><img src="./image/ETM.jpg" alt="personalPhoto" height="500px"></p>
+                </h2>
+            </div>
+            <h3 id="techStack">
+                <p id="techStackText">Tech Stack  |</p>
+                <span id="techStackIcons">
+                    <icon id="CSS"><i class="fa-brands fa-css3-alt" style="color: #4591fc;"></i></icon>
+                    <icon id="javascript"><i class="fa-brands fa-js" style="color: #ffdb5b;"></i></icon>
+                    <icon id="HTML"><i class="fa-brands fa-html5" style="color: #ff6600;"></i></icon>
+                    <icon id="python"><i class="fa-brands fa-python" style="color: #74C0FC;"></i></icon>
+                </span>
+            </h3>
+        </div>
+        <div class="container" id="p2Container">
+            this is page 2 content
+            <h1>Page 2</h1>
+        </div>
+        <div class="container" id="p3Container">
+            this is page 3 content
+            <h1>Page 3</h1>
+        </div>
+        <div class="container" id="p4Container">
+            <span id="contactBlock">
+                <p class = "contactInfo" id ="contactHeading">Contact Info</p>
+                <div class="contactContainer"><icon class="p4icon"><i class="fa-solid fa-phone"></i></icon>
+                    <p class = "contactInfo" id="photoNum">+852 65754700</p></div>
+                <div class="contactContainer"><icon class="p4icon"><i class="fa-solid fa-envelope"></i></icon>
+                    <p class = "contactInfo" id="email">lauchinkei@gmail.com</p></div>
+                <div class="contactContainer"><icon class="p4icon"><i class="fa-solid fa-location-dot"></i></icon>
+                    <p class = "contactInfo" id="location">Fok On Garden, <br>Ma ON Sha</p></div>
+            </span>
+            <span id="postform">
+                <p>Contact Me</p>
+                <p><input type="text" placeholder="First name"></p>
+                <p><input type="text" placeholder="Last name"></p>
+                <p><input type="email" placeholder="Email"></p>
+                <p><input type="tel" placeholder="Phone number"></p>
+                <p><textarea placeholder="Message"></textarea></p>
+                <p><button id="submitButton">Submit</button></p>
+            </span>
+        </div>
+</div>
+    <script src = "./script.js"></script>
+</body>
+</html>
